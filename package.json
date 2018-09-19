@@ -4,7 +4,7 @@
   "description": "A plugin for hapi to expose webpack-dev-server.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "repository": "https://github.com/glints-dev/hapi-plugins",
+  "repository": "https://github.com/glints-dev/hapi-webpack-dev-server-plugin",
   "author": "Wong Yong Jie <yjwong92@gmail.com>",
   "license": "MIT",
   "private": false,
