@@ -1,0 +1,31 @@
+{
+  "name": "@glints/hapi-webpack-dev-server-plugin",
+  "version": "1.0.0",
+  "description": "A plugin for hapi to expose webpack-dev-server.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "https://github.com/glints-dev/hapi-plugins",
+  "author": "Wong Yong Jie <yjwong92@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc --declaration",
+    "clean": "rm -r dist/",
+    "tslint": "tslint --project ."
+  },
+  "devDependencies": {
+    "@glints/tslint-rules": "^1.0.5",
+    "@types/hapi": "^17.0.19",
+    "@types/webpack": "^4.4.11",
+    "@types/webpack-dev-middleware": "^2.0.2",
+    "@types/webpack-hot-middleware": "^2.16.4",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "peerDependencies": {
+    "hapi": ">= 17",
+    "webpack": ">= 4",
+    "webpack-dev-middleware": ">= 3",
+    "webpack-hot-middleware": ">= 2"
+  }
+}
