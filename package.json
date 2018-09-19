@@ -1,6 +1,6 @@
 {
   "name": "@glints/hapi-webpack-dev-server-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A plugin for hapi to expose webpack-dev-server.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
