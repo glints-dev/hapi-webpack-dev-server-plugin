@@ -1,4 +1,4 @@
-# webpack-dev-server-plugin [![npm version](https://badge.fury.io/js/%40glints%2Feslint-config.svg)](https://badge.fury.io/js/%40glints%2Fhapi-webpack-dev-server-plugin)
+# webpack-dev-server-plugin [![npm version](https://badge.fury.io/js/%40glints%2Fhapi-webpack-dev-server-plugin.svg)](https://badge.fury.io/js/%40glints%2Fhapi-webpack-dev-server-plugin)
 
 This allows `webpack-dev-middleware` to be used with hapi.
 
