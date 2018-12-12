@@ -36,7 +36,12 @@ const WebpackDevServerPlugin: Hapi.Plugin<WebpackDevServerPluginOptions> & Hapi.
           // webpack-dev-middleware never calls the callback with an err object.
           // See node_modules/webpack-dev-middleware/lib/middleware.js.
         });
-        return h.continue;
+        // Hapi doesn't seem to honor h.abandon, leading to "headers already sent"
+        // errors on the console. Mark the private property _isReplied as true so
+        // that Hapi doesn't send anything.
+        // https://github.com/hapijs/hapi/issues/3884
+        (request as any)._isReplied = request.raw.res.finished;
+        return request.raw.res.finished ? h.abandon : h.continue;
       } catch (err) {
         return err;
       }
@@ -53,7 +58,8 @@ const WebpackDevServerPlugin: Hapi.Plugin<WebpackDevServerPluginOptions> & Hapi.
             }
           });
         });
-        return h.continue;
+        (request as any)._isReplied = request.raw.res.finished;
+        return request.raw.res.finished ? h.abandon : h.continue;
       } catch (err) {
         return err;
       }
