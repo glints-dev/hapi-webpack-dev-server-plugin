@@ -31,10 +31,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/hapi@^17.8.0":
-  version "17.8.0"
-  resolved "https://registry.yarnpkg.com/@types/hapi/-/hapi-17.8.0.tgz#e1264613f4111aa1d74da8bea6a63b286a504ac5"
-  integrity sha512-hI713RUrMY4dn4Q1exYDg4RFYpWwgH5TLROsDFcH8j03mUqCJaorosq7OBegHFSZu0MC/W2fVqKCZ0JwT+nQ2A==
+"@types/hapi@^18.0.1":
+  version "18.0.1"
+  resolved "https://registry.yarnpkg.com/@types/hapi/-/hapi-18.0.1.tgz#4e1f76b89b6d939aaab2ecbce7576146f5ea2739"
+  integrity sha512-2YznFunreTu7j+qWp8HU/0qLQ/RVJveWvqRQeT8N5/xOKMe6lIIS6gikNpuCZP5Ugh7WM+kpv9Nh/enVP+4E6w==
   dependencies:
     "@types/boom" "*"
     "@types/catbox" "*"
