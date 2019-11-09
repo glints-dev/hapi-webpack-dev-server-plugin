@@ -1,4 +1,4 @@
-import * as Hapi from 'hapi';
+import * as Hapi from '@hapi/hapi';
 import * as Webpack from 'webpack';
 
 import * as WebpackDevMiddleware from 'webpack-dev-middleware';
@@ -13,7 +13,7 @@ export interface WebpackDevServerPluginProperties {
   devMiddleware: WebpackDevMiddleware.WebpackDevMiddleware;
 }
 
-declare module 'hapi' {
+declare module '@hapi/hapi' {
   interface PluginProperties {
     WebpackDevServerPlugin?: WebpackDevServerPluginProperties;
   }
