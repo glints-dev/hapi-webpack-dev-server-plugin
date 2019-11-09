@@ -23,7 +23,7 @@
     "typescript": "^3.7.2"
   },
   "peerDependencies": {
-    "hapi": ">= 17",
+    "@hapi/hapi": ">= 18",
     "webpack": ">= 4",
     "webpack-dev-middleware": ">= 3",
     "webpack-hot-middleware": ">= 2"
