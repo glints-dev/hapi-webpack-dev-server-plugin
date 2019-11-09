@@ -2,11 +2,12 @@
   "compileOnSave": false,
   "compilerOptions": {
     "lib":[
-      "es2015"
+      "es2018"
     ],
     "outDir": "dist",
     "sourceMap": true,
     "sourceRoot": "src",
-    "strict": true
+    "strict": true,
+    "target": "es2018"
   }
 }
