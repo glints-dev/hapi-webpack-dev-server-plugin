@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@glints/tslint-rules": "^1.0.6",
-    "@types/hapi__hapi": "^18.2.6",
+    "@types/hapi__hapi": "^19.0.3",
     "@types/webpack": "^4.39.8",
     "@types/webpack-dev-middleware": "^2.0.3",
     "@types/webpack-hot-middleware": "^2.16.5",
