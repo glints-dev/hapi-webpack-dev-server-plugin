@@ -49,7 +49,7 @@ const WebpackDevServerPlugin: Hapi.Plugin<WebpackDevServerPluginOptions> & Hapi.
 
     server.ext('onRequest', async (request, h) => {
       try {
-        await new Promise((resolve, reject) => {
+        await new Promise<void>((resolve, reject) => {
           webpackHotMiddleware(request.raw.req, request.raw.res, (err: Error) => {
             if (err) {
               reject(err);

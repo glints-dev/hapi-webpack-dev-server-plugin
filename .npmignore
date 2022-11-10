@@ -1,7 +1,9 @@
 # Exclude TypeScript source files
 src/
 tsconfig.json
-tslint.json
+
+# Exclude ESLint configuration
+.eslintrc.js
 
 # Lockfiles should not be in final package
 yarn.lock
