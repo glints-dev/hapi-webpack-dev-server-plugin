@@ -15,18 +15,18 @@
   },
   "devDependencies": {
     "@types/hapi__hapi": "^18.2.6",
-    "@types/webpack": "^4.39.8",
-    "@types/webpack-dev-middleware": "^2.0.3",
-    "@types/webpack-hot-middleware": "^2.16.5",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-hot-middleware": "^2.25.6",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
     "eslint": "^8.27.0",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "webpack-dev-middleware": "^5.3.3"
   },
   "peerDependencies": {
     "@hapi/hapi": ">= 18",
-    "webpack": ">= 4",
-    "webpack-dev-middleware": ">= 3",
+    "webpack": ">= 5",
+    "webpack-dev-middleware": ">= 5",
     "webpack-hot-middleware": ">= 2"
   },
   "publishConfig": {
