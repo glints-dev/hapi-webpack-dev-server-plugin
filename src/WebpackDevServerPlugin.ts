@@ -13,7 +13,7 @@ export interface WebpackDevServerPluginOptions {
 }
 
 export interface WebpackDevServerPluginProperties {
-  devMiddleware: WebpackDevMiddleware.Middleware<
+  devMiddleware: WebpackDevMiddleware.API<
     WebpackDevMiddleware.IncomingMessage,
     WebpackDevMiddleware.ServerResponse
   >;
