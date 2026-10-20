@@ -1,6 +1,7 @@
 # Exclude TypeScript source files
 src/
 tsconfig.json
+test/
 
 # Exclude ESLint configuration
 .eslintrc.js

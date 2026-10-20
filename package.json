@@ -10,10 +10,12 @@
   "private": false,
   "scripts": {
     "build": "tsc --declaration",
+    "test": "yarn build && node --test test/*.test.js",
     "clean": "rm -r dist/",
     "eslint": "eslint -c .eslintrc.js --ext .ts  ."
   },
   "devDependencies": {
+    "@hapi/hapi": "^20.2.2",
     "@types/hapi__hapi": "^20.0.13",
     "@types/webpack": "^5.28.0",
     "@types/webpack-hot-middleware": "^2.25.6",
@@ -22,7 +24,8 @@
     "eslint": "^8.27.0",
     "typescript": "^4.8.4",
     "webpack": "^5.75.0",
-    "webpack-dev-middleware": "^5.3.3"
+    "webpack-dev-middleware": "6.1.1",
+    "webpack-hot-middleware": "2.25.3"
   },
   "peerDependencies": {
     "@hapi/hapi": ">= 18",
